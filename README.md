@@ -1,8 +1,8 @@
 # portfolio1
 Codecampのカリキュラムに沿って作成したポートフォリオです。
 
-●こちらからアクセス可能です<br>
-https://support.dc-itex.com/work26/portfolio/index.html
+●こちらからアクセス可能です
+https://support.dc-itex.com/work26/portfolio/index.html<br>
 ユーザー名：user
 パスワード：Fg3!nHxp
 
