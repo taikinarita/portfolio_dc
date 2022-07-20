@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Taiki Narita's Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="header-inner">
+      <h1 class="site-title"><span class="site-title-first">T</span>aiki Narita's Portfolio
+      </h1>
+      <nav class="nav" id="js-nav">
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a href="#intro" id="nav-item1">自己紹介</a>
+          </li>
+          <li class="nav-item">
+            <a href="#sample" id="nav-item2">実装サンプル</a>
+          </li>
+        </ul>
+      </nav>
+      <button class="hamburger" id="js-hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+  <main>
+    <div class="fv">
+    </div>
+    <section class="section-wrapper">
+      <h2 class="section-title" id="intro">自己紹介<br><span class="section-title-small">Self introduce</span></h2>
+      <p class="intro-text">私の名前は<span>成田太樹</span>です。東京都出身で、現在はディーキャリアITエキスパート中野オフィスにて、プログラミング学習に取り組んでいます。<br>どうぞよろしくお願いします。</p>
+      <img src="images/img01.jpg" alt="tree" class="intro-img">
+      <div class="intro-inner">
+          <h3 class="box-title">スキル</h3><span class="box-title-span">Skills</span></h3>
+          <ul class="box-list">
+            <li class="box-item">HTML/CSS</li>
+            <li class="box-item">JavaScript</li>
+            <li class="box-item">PHP/MySQL</li>
+          </ul>
+      </div>
+    </section>
+    <section class="section-wrapper">
+      <h2 class="section-title" id="sample">実装サンプル<br><span class="section-title-small">sample</span></h2>
+      <h3 class="sample-title">画像ギャラリー</h3>
+      <div class="card-list clearfix">
+        <div class="card-box clearfix2">
+          <div class="card-item">
+            <div class="card-inner">
+              <img src="images/gallery01.jpg" alt="moon" class="card-img">
+              <h4 class="card-title">宇宙飛行士と月</h4>
+              <p class="card-text">幻想的な色彩の月と雲の前に、宇宙飛行士が立っています。</p>
+            </div>
+          </div>
+          <div class="card-item">
+            <div class="card-inner">
+              <img src="images/gallery02.jpg" alt="stone" class="card-img">
+              <h4 class="card-title">朝日と石</h4>
+              <p class="card-text">積み重ねられた石を、朝日が照らしています。</p>
+            </div>
+          </div>
+        </div>
+        <div class="card-box card-box2 clearfix2">
+          <div class="card-item">
+            <div class="card-inner">
+              <img src="images/gallery03.jpg" alt="lake" class="card-img">
+              <h4 class="card-title">鏡のような湖</h4>
+              <p class="card-text">空と海がどちらかわからなくなるような、鏡のような湖です。</p>
+            </div>
+          </div>
+          <div class="card-item">
+            <div class="card-inner">
+              <img src="images/gallery04.jpg" alt="baloon" class="card-img">
+              <h4 class="card-title">ハートの風船</h4>
+              <p class="card-text">青空をバックに、たくさんの色とりどりのハートの風船が浮いています。</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <h3 class="sample-title">訓練課題</h3>
+      <div class="result">
+        <ul class="result-list">
+          <li>
+            <div class="result-item">
+              <h4 class="result-title">JavaScript：ルーレット</h4>
+              <a href="../codecamp_js/roulette.html" class="result-link">
+                <img src="images/js.png" alt="picture" class="result-image">
+              </a>
+              <p class="result-text">ルーレットの回転速度や色を考えて作成しました。適切な回転速度や色でないとルーレットの回転が目に負担のかかるチカチカした動作になってしまい快適に利用できない可能性があるためです。</p>
+            </div>
+          </li>
+          <li>
+            <div class="result-item">
+              <h4 class="result-title">PHP/MySQL：ECサイト</h4>
+                <a href="../codecamp_php/htdocs/ecsite/ecsite_login.php" class="result-link">
+                  <img src="images/php.png" alt="picture" class="result-image">
+                </a>
+              <p class="result-text">ユーザーの動作に対して必ず何かしらのレスポンスが出るように気を払いました。ユーザビリティを考えたサイト設計について学びました。</p>
+            </div>
+          </li>
+          <li>
+            <div class="result-item">
+              <h4 class="result-title">WordPress</h4>
+                <a href="../wp/" class="result-link">
+                  <img src="images/wp.png" alt="picture" class="result-image">
+                </a>
+              <p class="result-text">独自性の高いサイトを作成できるようオリジナルテーマの作成・編集と用途に沿ったプラグインの導入を行いました。</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+  <footer class="footer"> 
+    <small class="footer-small">Copyright ©︎ 2022 Taiki Narita</small>
+  </footer>
+  <script src="common.js"></script>
+</body>
+</html>
