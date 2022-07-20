@@ -1,4 +1,6 @@
 # portfolio1
-Basic認証
+・url
+https://support.dc-itex.com/work26/portfolio/index.html
+・Basic認証
 ユーザー名：user
 パスワード：Fg3!nHxp
