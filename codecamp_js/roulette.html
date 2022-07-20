@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ルーレット</title>
+  <style type="text/css">
+      .box {
+        background-color: #eee;
+        display: inline-block;
+        padding: 20px;
+      }
+
+      table {
+        border: 4px solid #000;
+        border-collapse: collapse;
+        margin-bottom: 10px;
+      }
+
+      td {
+        background-color: #fff;
+        border: 1px solid #000;
+        font-size: 24px;
+        padding: 16px;
+        text-align: center;
+      }
+
+      .btn-box {
+        text-align: center;
+      }
+
+      button {
+        color: white;
+        padding: 8px 12px;
+      }
+
+      .start {
+        color: black;
+        background-color: gold;
+      }
+
+      .stop {
+        background-color: red;
+      }
+
+      .reset {
+        background-color: gray;
+      }
+  </style>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script>
+    $(function(){
+      // ルーレットの目作成
+      for(i = 0; i < 4; i++){
+        var tr = $('<tr>');
+        tr.attr('id', 'row' + i);
+        $('#table').append(tr);
+        for(j = 1; j <= 4; j++){
+          var td = $('<td>');
+          td.attr('id', 'num' + (4 * i + j));
+          td.text(4 * i + j);
+          $('#row' + i).append(td);
+        }
+      }
+      // 残りの目
+      var stock = [];
+      for(i = 0; i < 16; i++){
+        stock[i] = i + 1;
+      }
+      // setIntervalのキー
+      var interval;
+      // ルーレットの目の色を消すためのキー
+      var clear;
+      // スタート
+      function roulette_start(){
+        $('#start').prop('disabled', true);
+        interval = setInterval(() => {
+          $('#num' + stock[clear]).css('background-color', 'white');
+          var x = Math.floor(Math.random() * stock.length);
+          $('#num' + stock[x]).css('background-color', 'yellow');
+          clear = x;
+        }, 100);
+      }
+      $('#start').click(roulette_start);
+      // ストップ
+      function roulette_stop(){
+        var start_disable = $('#start').prop('disabled');
+        if(start_disable === true){
+          $('#start').prop('disabled', false);
+          clearInterval(interval);
+          $('#num' + stock[clear]).css('background-color', 'blue');  
+          stock.splice(clear, 1); 
+          // 16回ストップ後はスタート押せなくなる
+          if(!stock.length){
+            $('#start').prop('disabled', true);
+          }
+        }
+      }
+      $('#stop').click(roulette_stop);
+      // リセット
+      function roulette_reset(){
+        clearInterval(interval);
+        for(i = 0; i < 16; i++){
+          stock[i] = i + 1;
+        } 
+        for(i = 0; i < stock.length; i++){
+          $('#num' + stock[i]).css('background-color', 'white');
+        }
+        $('#start').prop('disabled', false);
+      }
+      $('#reset').click(roulette_reset);
+    });
+  </script>
+</head>
+<body>
+  <div class="box">
+    <table id="table"></table>
+    <div class="btn-box">
+      <button id="start" class="start">スタート</button>
+      <button id="stop" class="stop">ストップ</button>
+      <button id="reset" class="reset">リセット</button>
+    </div>
+  </div>
+</body>
+</html>
+

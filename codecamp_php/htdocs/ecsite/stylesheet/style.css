@@ -1,0 +1,294 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: #ddd;
+}
+
+
+/* 共通hタグ */
+.title {
+    font-size: 36px;
+    font-weight: medium;
+}
+
+.h2 {
+  font-size: 30px;
+  margin-bottom: 20px;
+  padding-left: 10px;
+}
+
+/* 共通構造 */
+
+.wrapper {
+    margin: 0 10px;
+    min-width: 800px;
+    max-width: 1168px;
+}
+
+.btn {
+  background-color: #aaa;
+  border: none;
+  border-radius: 4px;
+  box-shadow: 0px 0px 0px #fff;
+  color: #000;
+  display: block;
+  font-size: 12px;
+  padding: 4px 8px;
+}
+
+.btn:hover{
+  cursor: pointer;
+  opacity: .7;
+}
+
+/* 管理ページ共通 */
+.admin-link {
+    border-bottom: 1px solid #000;
+    display: flex;
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+}
+
+.admin-logout-btn {
+    margin-right: 20px;
+}
+
+.admin-link-btn {
+    text-decoration: none;
+}
+
+.table {
+    border-collapse: collapse;
+    max-width: 800px;
+    table-layout: fixed;
+    text-align: center;
+    width: 100%;
+}
+
+.th {
+    background-color: aqua;
+    border: solid 1px #000;
+    padding: 10px;
+}
+
+.td {
+    border: solid 1px #000;
+    padding: 10px;
+}
+
+/* 管理ページ商品登録ページ */
+.item-register {
+  margin-bottom: 30px;
+}
+
+.input-form {
+  margin: 0px 0px 10px;
+  max-width: 400px;
+  width: 50%;
+}
+
+.select {
+  margin: 0px 0px 10px;
+}
+
+.item-index {
+  margin-bottom: 30px;
+}
+
+.admin-image-cell {
+    width: 25%;
+}
+
+.admin-cell {
+    width: 15%;
+}
+
+.admin-image {
+    max-height: 100px;
+    max-width: 100%;
+}
+
+.admin-input {
+    max-width: 90%;
+}
+
+/* login, register, top, cart, finish共通 */
+.header {
+    background-color: blue;
+    height: 70px;
+    width: 100%;
+}
+
+.header-icon {
+    color: #fff;
+    display: block;
+    text-decoration: none;
+    padding: 10px;
+}
+
+/* ログインページ */
+.login-form {
+    display: block;
+    margin: 20px auto 0;
+    max-width: 200px;
+    width: 30%;
+}
+
+.input-login {
+    margin-top: 10px;
+}
+
+.login-btn {
+    background-color: aqua;
+    margin-top: 10px;
+}
+
+.page-btn {
+    color: black;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    margin: 20px auto;
+}
+
+/* ユーザー登録ページ */
+.register-form {
+    display: block;
+    margin: 10px auto 0;
+    max-width: 300px;
+    width: 40%;
+}
+
+.input-register {
+    margin-top: 10px;
+}
+
+/* top, cart, finish共通 */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.header-user {
+    color: #000;
+    font-size: 16px;
+}
+
+.header-cart {
+    display: inline-block;
+    height: 28px;
+    vertical-align: middle;
+    width: 28px;
+}
+
+.header-logout {
+    background-color: blue;
+    border: none;
+    color: #000;
+    font-size: 16px;
+}
+
+.header-logout:hover {
+    cursor: pointer;
+}
+
+/* topお買い物画面 */
+.items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.item-box {
+    border: solid 4px #aaa;
+    border-radius: 10%;
+    margin-top: 20px;
+    padding: 10px;
+    width: calc(33% - 42px);
+}
+
+.item-image {
+    display: block;
+    height: 100px;
+    margin: 0 auto;
+    max-width: 90%;
+    
+}
+
+.item-info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.item-title, .item-price {
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 32px;
+}
+
+.top-btn {
+    background-color: aqua;
+    margin: 0 auto;
+    width: 60%;
+}
+
+.sold-out {
+    color: red;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0;
+    text-align: center;
+}
+
+/* カート画面 */
+.cart-image-cell {
+    width: 40%;
+}
+
+.cart-cell {
+    width: 15%;
+}
+
+.cart-image {
+    height: 100px;
+    max-width: 90%;
+}
+
+.cart-stock {
+    max-width: 70%;
+}
+
+.total {
+    font-size: 16px;
+}
+
+.total-money {
+    font-size: 28px;
+}
+
+.cart-btn {
+    background-color: aqua;
+    text-decoration: none;
+    width: 60px;
+}
+
+/* 購入結果画面 */
+.finish-image-cell {
+    width: 40%;
+}
+
+.finish-cell {
+    width: 20%;
+}
+
+.finish-image {
+    height: 100px;
+    max-width: 90%;
+}
