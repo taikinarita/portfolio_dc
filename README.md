@@ -1,5 +1,4 @@
 # portfolio_dc
-Codecampのカリキュラムに沿って作成したポートフォリオです。
 
 ●こちらからlaravelのポートフォリオを除く全てのポートフォリオにアクセス可能です<br>
 https://support.dc-itex.com/work26/portfolio/index.html<br>
@@ -7,16 +6,16 @@ https://support.dc-itex.com/work26/portfolio/index.html<br>
 パスワード：Fg3!nHxp<br>
 
 ●フォルダ構成<br>
- ・top_page<br>
+ ・portfolio<br>
     HTML、CSS、JavaScriptで構成したページです。<br>
     下記3点のポートフォリオにつながるリンクを配置した紹介ページになります。<br>
     
- ・js_roulette<br>
+ ・codecamp_js<br>
     JavaScriptで作成したルーレットです。<br>
     スタートボタンを押していただくとルーレットが回転します。<br>
     ストップボタンを押すとルーレットが止まり、リセットボタンを押すと初期状態に戻ります。<br>
     
- ・php_ecsite<br>
+ ・codecamp_php<br>
     PHP、MySQLで作成したECサイトです。以下ページごとの機能の紹介です。<br>
     ▼ecsite_login.php & ecsite_register.php<br>
       ユーザー登録していただくか、作成済みのアカウントでログインいただくとショッピングページに移行します。<br>
@@ -32,6 +31,6 @@ https://support.dc-itex.com/work26/portfolio/index.html<br>
     ▼ecsite_admin_user.php<br>
       登録されたユーザー情報を一覧表示したページです。商品管理ページボタン押下で商品管理ページに移動できます。<br>
       
- ・wordpress<br>
+ ・wp<br>
     静的なサイトを動的なテンプレートへ変更しました。<br>
     オリジナルテーマの作成と編集を行いました。<br>
