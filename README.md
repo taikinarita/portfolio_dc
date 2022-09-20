@@ -1,4 +1,4 @@
-# portfolio1
+# portfolio_dc
 Codecampのカリキュラムに沿って作成したポートフォリオです。
 
 ●こちらからアクセス可能です<br>
